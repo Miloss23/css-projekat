@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervacija</title>
+    <link rel="icon" href="../slike/logoo.jpg" type="slike/x-icon">
+    <link rel="stylesheet" href="../body.css">
+</head>
+<body>
+   <nav>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+            <a class="home-link" href="../index.html">Početna</a> 
+            <a href="onama.html">O nama</a> 
+            <a href="rezervacija.html">Rezervacija</a> 
+            <a href="ponude.html">Ponude</a>
+        </div>      
+    </nav>
+
+    <h1 class="jedan">Rezervacija</h1>
+
+    <form class="forma">
+
+        <p>Ime</p>
+        <input type="text" required>
+
+        <p>Prezime</p>
+        <input type="text" required>
+
+        <p>Datum iznajmljivanja</p>
+        <input type="date" required>
+
+        <p>Unesite vaš Email:</p>
+        <input type="email" placeholder="email" required>
+
+        <p>Marke automobila</p>
+        <input type="radio" name="marke automobila"> Audi <br>
+        <input type="radio" name="marke automobila"> BMW <br>
+        <input type="radio" name="marke automobila"> Ford <br>
+        <input type="radio" name="marke automobila"> Mercedes <br>
+        <input type="radio" name="marke automobila"> Volksvagen <br>
+        <input type="radio" name="marke automobila"> Ferrari <br>
+        <input type="radio" name="marke automobila"> Porsche <br>
+        
+        <p>Napomena:</p>
+        <textarea cols="30" rows="10" maxlength="150"></textarea>
+        <br>
+            <input type="submit" value="Pošalji">
+            <input type="reset" value="Restart">
+    </form>
+</body>
+</html>
